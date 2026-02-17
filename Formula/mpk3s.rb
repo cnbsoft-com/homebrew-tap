@@ -13,13 +13,13 @@ class Mpk3s < Formula
     # libexec.install Dir["libs/*.sh"]
   end
 
-  def caveats
-    <<~EOS
-      이 도구는 'multipass'가 설치되어 있어야 작동합니다.
-      만약 설치되어 있지 않다면 아래 명령어로 먼저 설치해 주세요:
-        brew install --cask multipass
-    EOS
-  end
+  # def caveats
+  #   <<~EOS
+  #     이 도구는 'multipass'가 설치되어 있어야 작동합니다.
+  #     만약 설치되어 있지 않다면 아래 명령어로 먼저 설치해 주세요:
+  #       brew install --cask multipass
+  #   EOS
+  # end
 
   test do
     system "#{bin}/mpk3s", "usage"
